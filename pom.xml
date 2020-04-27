@@ -7,7 +7,7 @@
         <version>3</version>
     </parent>
     <artifactId>scanner</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.1.RELEASE</version>
 
     <dependencies>
         <dependency>
