@@ -20,20 +20,11 @@ import java.lang.reflect.Method;
 import java.util.List;
 import java.util.Set;
 
-/**
- * simple introduction
- * 
- * <p>
- * 类扫描接口
- * </p>
- * 
- */
 public interface ClassScanner {
 
 	/**
 	 * 获取指定包名中的所有类
 	 * 
-	 * @param packageName    packageName
 	 * @param packagePattern packagePattern
 	 * @return Set
 	 */
@@ -42,7 +33,6 @@ public interface ClassScanner {
 	/**
 	 * 获取指定包名中指定注解的相关类
 	 * 
-	 * @param packageName     packageName
 	 * @param annotationClass annotationClass
 	 * @return Set
 	 */
@@ -51,12 +41,10 @@ public interface ClassScanner {
 	/**
 	 * 获取指定包名中指定父类或接口的相关类
 	 * 
-	 * @param packageName packageName
-	 * @param superClass  superClass
+	 * @param superClass superClass
 	 * @return Set
 	 */
 	Set<Class<?>> getBySuperclass(Class<?> superClass);
-
 
 	/**
 	 * 获取一个类上方法名符合正则的所有的方法
