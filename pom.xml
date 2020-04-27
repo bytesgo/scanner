@@ -7,7 +7,7 @@
         <version>3</version>
     </parent>
     <artifactId>scanner</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.1</version>
 
     <dependencies>
         <dependency>
@@ -30,24 +30,4 @@
         </dependency>
     </dependencies>
 
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-gpg-plugin</artifactId>
-                <executions>
-                    <execution>
-                        <id>sign-artifacts</id>
-                        <goals>
-                            <goal>sign</goal>
-                        </goals>
-                        <phase>verify</phase>
-                        <!-- <configuration> <executable>gpg</executable> <homedir>${gpg.homedir}</homedir> 
-                                    <keyname>${gpg.keyname}</keyname> <passphrase>${gpg.passphrase}</passphrase> 
-                                    </configuration> -->
-                    </execution>
-                </executions>
-            </plugin>
-        </plugins>
-    </build>
 </project>
