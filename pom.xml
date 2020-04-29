@@ -3,12 +3,56 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.github.leeyazhou</groupId>
-        <artifactId>common-maven-parent</artifactId>
-        <version>3</version>
+        <artifactId>parent</artifactId>
+        <version>5.1</version>
     </parent>
     <artifactId>scanner</artifactId>
-    <version>0.0.1.RELEASE</version>
+    <version>1.0.1.RELEASE</version>
+    <name>scanner</name>
+    <description>scanner</description>
 
+    <url>https://github.com/${github.org}/${github.repo}.git</url>
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <id>leeyazhou</id>
+            <name>leeyazhou</name>
+            <email>lee_yazhou@163.com</email>
+        </developer>
+    </developers>
+    <contributors>
+        <contributor>
+            <name>leeyazhou</name>
+            <email>coderhook@gmail.com</email>
+            <url>github.com/leeyazhou</url>
+        </contributor>
+    </contributors>
+    <scm>
+        <connection>scm:git:git@github.com:${github.org}/${github.repo}.git</connection>
+        <developerConnection>scm:git:git@github.com:${github.org}/${github.repo}.git</developerConnection>
+        <tag>HEAD</tag>
+        <url>git@github.com:${github.org}/${github.repo}.git</url>
+    </scm>
+    <issueManagement>
+        <system>github-issue</system>
+        <url>https://github.com/${github.org}/${github.repo}/issues</url>
+    </issueManagement>
+    <ciManagement>
+        <system>travis-ci</system>
+        <url>https://travis-ci.org/${github.org}/${github.repo}</url>
+    </ciManagement>
+
+    <properties>
+        <github.org>leeyazhou</github.org>
+        <github.repo>scanner</github.repo>
+    </properties>
     <dependencies>
         <dependency>
             <groupId>org.slf4j</groupId>
@@ -29,5 +73,4 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-
 </project>
