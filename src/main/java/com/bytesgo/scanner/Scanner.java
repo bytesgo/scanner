@@ -18,7 +18,7 @@ public abstract class Scanner implements ClassScanner {
 		return new ScannerBuilder();
 	}
 
-	static class ScannerBuilder {
+	public static class ScannerBuilder {
 
 		private String basePackage;
 		private ClassLoader classLoader;
