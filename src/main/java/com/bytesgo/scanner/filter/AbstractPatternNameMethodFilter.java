@@ -13,18 +13,15 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.github.leeyazhou.scanner.filter;
+package com.bytesgo.scanner.filter;
 
-public abstract class AbstractSupperClassFilter extends AbstractClassFilter {
+public abstract class AbstractPatternNameMethodFilter extends AbstractMethodFilter {
 
-	protected final Class<?> superClass;
+  protected final String methodPattern;
 
-	protected AbstractSupperClassFilter(String packageName, Class<?> superClass) {
-		this(packageName, superClass, null);
-	}
+  protected AbstractPatternNameMethodFilter(Class<?> clazz, String methodPattern) {
+    super(clazz);
+    this.methodPattern = methodPattern;
+  }
 
-	public AbstractSupperClassFilter(String packageName, Class<?> superClass, ClassLoader loader) {
-		super(packageName, loader);
-		this.superClass = superClass;
-	}
 }

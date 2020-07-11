@@ -1,14 +1,14 @@
 /**
  * 
  */
-package com.github.leeyazhou.scanner;
+package com.bytesgo.scanner;
 
 import java.util.Set;
 
 import org.junit.Before;
 import org.junit.Test;
 
-import com.github.leeyazhou.service.annotation.Service;
+import com.bytesgo.scanner.service.annotation.Service;
 
 /**
  * @author leeyazhou

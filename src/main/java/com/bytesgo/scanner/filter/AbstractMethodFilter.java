@@ -13,17 +13,29 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.github.leeyazhou.scanner.filter;
+package com.bytesgo.scanner.filter;
 
-import java.lang.annotation.Annotation;
+import java.lang.reflect.Method;
+import java.util.ArrayList;
+import java.util.List;
 
-public abstract class AbstractAnnotationMethodFilter extends AbstractMethodFilter {
+public abstract class AbstractMethodFilter {
+  protected final Class<?> clazz;
 
-  protected final Class<? extends Annotation> annotationType;
+  protected AbstractMethodFilter(Class<?> clazz) {
+    this.clazz = clazz;
+  }
 
-  protected AbstractAnnotationMethodFilter(Class<?> clazz, Class<? extends Annotation> annotationType) {
-    super(clazz);
-    this.annotationType = annotationType;
+  public abstract boolean filterCondition(Method method);
+
+  public List<Method> getMethodList() {
+    List<Method> mlist = new ArrayList<Method>();
+    for (Method m : clazz.getMethods()) {
+      if (filterCondition(m)) {
+        mlist.add(m);
+      }
+    }
+    return mlist;
   }
 
 }

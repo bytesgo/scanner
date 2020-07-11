@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.github.leeyazhou.service.annotation;
+package com.bytesgo.scanner.service.annotation;
 
 import static java.lang.annotation.ElementType.TYPE;
 import static java.lang.annotation.RetentionPolicy.RUNTIME;

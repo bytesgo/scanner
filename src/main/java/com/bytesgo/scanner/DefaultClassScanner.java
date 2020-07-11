@@ -13,19 +13,19 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.github.leeyazhou.scanner;
+package com.bytesgo.scanner;
 
+import com.bytesgo.scanner.filter.AbstractClassFilter;
+import com.bytesgo.scanner.filter.AbstractPatternNameMethodFilter;
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
 import java.util.List;
 import java.util.Set;
 
-import com.github.leeyazhou.scanner.filter.AbstractAnnotationClassFilter;
-import com.github.leeyazhou.scanner.filter.AbstractAnnotationMethodFilter;
-import com.github.leeyazhou.scanner.filter.AbstractClassFilter;
-import com.github.leeyazhou.scanner.filter.AbstractPatternNameMethodFilter;
-import com.github.leeyazhou.scanner.filter.AbstractSupperClassFilter;
+import com.bytesgo.scanner.filter.AbstractAnnotationClassFilter;
+import com.bytesgo.scanner.filter.AbstractAnnotationMethodFilter;
+import com.bytesgo.scanner.filter.AbstractSupperClassFilter;
 
 public class DefaultClassScanner extends Scanner implements ClassScanner {
 	private final String basePackage;

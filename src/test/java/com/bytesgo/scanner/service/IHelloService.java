@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.github.leeyazhou.service;
+package com.bytesgo.scanner.service;
 
 /**
  * @author leeyazhou
